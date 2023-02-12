@@ -1,0 +1,23 @@
+﻿@using LondonLab6.Models;
+@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form method="post" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email address</label>
+        <input asp-for="Email" type="email" class="form-control" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Email address</label>
+        <input asp-for="Password" type="password" class="form-control" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
